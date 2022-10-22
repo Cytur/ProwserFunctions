@@ -2,6 +2,6 @@
   {
   "Domain": "Prowser",
   "Title": "Prowser - Internet for all",
-  "Script": "local f = new("Frame") f.Parent = Page",
+  "Script": 'local f = new("Frame") f.Parent = Page',
   },
 ]
