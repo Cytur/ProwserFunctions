@@ -14,11 +14,11 @@ dom.website = function(name)
 end
 
 dom.ResizeWebsite = function(size)
-  for _,v in pairs(app:GetChildren()) do
-		if v.Name == "Page" then
-			v.CanvasSize = udim
-		end
-	end
+   for _,v in pairs(app:GetChildren()) do
+     if v.Name == "Page" then
+	v.CanvasSize = udim
+     end
+   end
 end
 
 dom.NewWindow = function(name,size,logoId)
