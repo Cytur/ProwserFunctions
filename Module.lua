@@ -1,6 +1,4 @@
-local dom = {}
-
-dom.website = function(name)
+function website(name)
 	local Page = new("ScrollingFrame",app)
 	Page.Size = UDim2.fromScale(1,0.8)
 	Page.Position = UDim2.fromScale(0,0.2)
@@ -13,7 +11,7 @@ dom.website = function(name)
 	return Page
 end
 
-dom.ResizeWebsite = function(size)
+function ResizeWebsite(size)
    for _,v in pairs(app:GetChildren()) do
      if v.Name == "Page" then
 	v.CanvasSize = udim
@@ -21,8 +19,6 @@ dom.ResizeWebsite = function(size)
    end
 end
 
-dom.NewWindow = function(name,size,logoId)
+function NewWindow(name,size,logoId)
   print("NewWindow() is not completed yet!")
 end
-
-return dom
