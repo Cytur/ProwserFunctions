@@ -35,6 +35,7 @@ function topbar()
 		local bar = new("Frame",app)
 		bar.Size = UDim2.fromScale(1,0.1)
 		bar.Position = UDim2.fromScale(0,0.2)
+		bar.BorderSizePixel = 0
 		local page = app.Page
 		page.Position = UDim2.fromScale(0,0.3)
 		return bar
