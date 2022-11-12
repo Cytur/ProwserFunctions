@@ -9,6 +9,7 @@ function website(name)
 	Page.AutomaticCanvasSize = "Y"
 	Page.CanvasSize = UDim2.fromScale(0,1)
 	Page.Name = "Page"
+	for _,v in pairs(app:GetChildren()) do if v.Name == "Topbar" and v:IsA("Frame") then v:Destroy() end end
 	return Page
 end
 
@@ -33,6 +34,7 @@ function topbar()
 	end
 	if websiteLoaded == true then
 		local bar = new("Frame",app)
+		bar.Name = "Topbar"
 		bar.Size = UDim2.fromScale(1,0.1)
 		bar.Position = UDim2.fromScale(0,0.2)
 		bar.BorderSizePixel = 0
